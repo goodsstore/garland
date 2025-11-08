@@ -1,0 +1,1404 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=480">
+        <title>Гірлянда </title>
+        <!-- <link rel="shortcut icon" href="images/favicon.png" type="image/png"> -->
+        <link rel="stylesheet" href="css/push.css">
+        <link rel="stylesheet" href="css/ProximaStara.css">
+        <link rel="stylesheet" type="text/css" href="css/Bratello.css">
+        <link rel="stylesheet" href="css/fontss.css">
+        <link rel="stylesheet" href="css/options.css">
+        <link rel="stylesheet" href="css/nastyle.css">
+        <link rel="stylesheet" href="css/all.min.css" type="text/css">
+        <link rel="stylesheet" type="text/css" href="npm/slick-carousel%401.8.1/slick/slick.css">
+        <!-- new -->
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1127765859462518');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="tr?id=1127765859462518&ev=PageView&noscript=1"></noscript>
+<!-- End Meta Pixel Code -->
+    </head>
+    <body>
+        <!-- add new 2 -->
+       
+        <!-- end new 2 -->
+        <style>
+            .menulog {
+                display: none
+            }
+
+            .menu {
+                text-align: center;
+                padding: 8px 0;
+                background: #ececec;
+            }
+
+            .menu__links-item img {
+                vertical-align: middle;
+            }
+
+            .menu__icon {
+                display: none;
+                width: 45px;
+                height: 35px;
+                position: relative;
+                cursor: pointer;
+            }
+
+            .menu__icon span {
+                display: block;
+                position: absolute;
+                height: 5px;
+                width: 100%;
+                background: #333333;
+                border-radius: 9px;
+                opacity: 1;
+                left: 0;
+                transform: rotate(0deg);
+                transition: .25s ease-in-out;
+            }
+
+            .menu__icon span:nth-child(1) {
+                top: 0px;
+            }
+
+            .menu__icon span:nth-child(2), .menu__icon span:nth-child(3) {
+                top: 13px;
+            }
+
+            .menu__icon span:nth-child(4) {
+                top: 26px;
+            }
+
+            .menu__links-item {
+                display: inline-block;
+                color: #333333;
+                font-family: Arial;
+                font-size: 14px;
+                line-height: 30px;
+                padding: 0 10px;
+                text-transform: uppercase;
+                text-decoration: none;
+            }
+
+            .menu__links-item:hover {
+                text-decoration: underline;
+            }
+
+            .menu.menu_state_open .menu__icon span:nth-child(1) {
+                top: 18px;
+                width: 0%;
+                left: 50%;
+            }
+
+            .menu.menu_state_open .menu__icon span:nth-child(2) {
+                transform: rotate(45deg);
+                background: #fff;
+            }
+
+            .menu.menu_state_open .menu__icon span:nth-child(3) {
+                transform: rotate(-45deg);
+                background: #fff;
+            }
+
+            .menu.menu_state_open .menu__icon span:nth-child(4) {
+                top: 18px;
+                width: 0%;
+                left: 50%;
+            }
+
+            .menu.menu_state_open .menu__links {
+                display: block;
+            }
+
+            @media screen and (max-width: 999px) {
+                .menulog {
+                    width: 100%;
+                    max-width: 55px;
+                    margin-left: 8px;
+                    margin-top: 0px;
+                    display: block
+                }
+
+                .menu {
+                    text-align: right;
+                    padding-top: 10px;
+                    padding-right: 15px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+
+                .menu__icon {
+                    display: inline-block;
+                    z-index: 900;
+                }
+
+                .menu__links {
+                    position: fixed;
+                    display: none;
+                    top: 0;
+                    right: 0;
+                    left: 0;
+                    height: 100%;
+                    padding-top: 50px;
+                    background-color: rgba(0, 0, 0, 0.9);
+                    z-index: 100;
+                    overflow: auto;
+                }
+
+                .menu__links-item {
+                    display: block;
+                    padding: 10px 0;
+                    text-align: center;
+                    color: #ffffff;
+                    font-size: 24px;
+                    line-height: 45px;
+                }
+
+                .menu__links-item-mob {
+                    display: none;
+                }
+            }
+
+            /* new */
+            .gallery {
+                width: 100%;
+                max-width: 620px;
+                margin: 0px auto;
+            }
+
+            .gallery-slider {
+                width: 100%;
+                height: auto;
+                margin: 0 0 10px 0;
+            }
+
+            .gallery-slider .swiper-slide {
+                width: auto;
+                height: 478px;
+            }
+
+            .gallery-slider .swiper-slide img {
+                display: block;
+                width: auto;
+                height: 100%;
+                margin: 0 auto;
+            }
+
+            .gallery-thumbs {
+                width: 100%;
+                padding: 0;
+                overflow: hidden;
+            }
+
+            .gallery-thumbs .swiper-slide {
+                width: 150px;
+                height: 150px;
+                text-align: center;
+                overflow: hidden;
+                opacity: 0.5;
+            }
+
+            .gallery-thumbs .swiper-slide-active {
+                opacity: 1;
+            }
+
+            .gallery-thumbs .swiper-slide img {
+                width: auto;
+                height: 100%;
+            }
+
+            .swiper-button-prev, .swiper-button-next {
+                color: #e89e2c;
+            }
+
+            .price {
+                z-index: 10;
+                margin: -46px auto 10px;
+            }
+
+            .offer .bullet .pic {
+                z-index: 1;
+            }
+
+            .offer .main-title {
+                text-decoration: none;
+                display: block;
+            }
+
+            /* end new */
+        </style>
+        <!-- partial:index.partial.html -->
+        <!-- partial -->
+        <script src="js/jquery.min.js"></script>
+     
+        <div class="wrap">
+            <style>
+                .colortext {
+                    color: white;
+                }
+            </style>
+            <!-- <div style="    height: 100%;
+   
+    background-size: 100% 100%;
+    color: #3c4152;
+    text-align: center;
+    font-size: 16px;
+    padding-top: 2px;
+    font-weight: 900;">
+                <span style="font-family: 'Proxima Nova', Arial, Helvetica, sans-serif; letter-spacing: 0px;">ДРУГЕ ПОКРИВАЛО ЗА ЦІНОЮ 750 ГРН</span>
+            </div> -->
+            <section class="offer">
+                
+                    <span class="colortext"> <br></span> 
+                    <!-- <p style="font-size: 20px; color: aliceblue;">Великі розміри</p> -->
+                </a>
+                <div class="sub-title"></div>
+                <div class="gallery">
+                    <img src="images/main.jpg" alt="">
+                    <!-- <br>
+                    <div class="price">
+                        <div class="old">
+                            <p>Звичайна ціна:</p>
+                            <div class="val">
+                                <span>1530</span><i>грн</i>
+                            </div>
+                        </div>
+                        <div class="new">
+                            <p>Ціна сьогодні:</p>
+                            <div class="val">
+                                <span>1149</span><i>грн</i>
+                            </div>
+                        </div>
+                    </div> -->
+                    <!-- <div class="swiper-container gallery-thumbs one">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="images/1.webp" alt>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/2.webp" alt>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/3.webp" alt>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/4.webp" alt>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+                <!-- 🕒 Таймер зворотного відліку (широкий) -->
+<div class="simple-timer wide">
+  <h3>До кінця акції залишилось:</h3>
+  <div id="timer">
+    <span id="hours">00</span> :
+    <span id="minutes">00</span> :
+    <span id="seconds">00</span>
+  </div>
+</div>
+
+<style>
+  .simple-timer {
+    text-align: center;
+    padding: 25px;
+    margin: 35px auto;
+    color: #fff;
+    background: #26810d;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 700px; /* 👉 зроблено ширше */
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  }
+
+  .simple-timer h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #fff;
+    letter-spacing: 0.5px;
+  }
+
+  #timer {
+    font-size: 52px; /* більші цифри */
+    font-weight: 800;
+    color: #ffd700;
+    letter-spacing: 5px;
+  }
+
+  @media (max-width: 600px) {
+    #timer { font-size: 36px; }
+    .simple-timer { padding: 20px; }
+  }
+</style>
+
+<script>
+  // Таймер до кінця дня (23:59:59)
+  function updateTimer() {
+    const now = new Date();
+    const midnight = new Date();
+    midnight.setHours(23, 59, 59, 999);
+    const diff = midnight - now;
+
+    if (diff <= 0) {
+      document.getElementById("timer").textContent = "00 : 00 : 00";
+      return;
+    }
+
+    const hours = Math.floor(diff / 1000 / 60 / 60);
+    const minutes = Math.floor((diff / 1000 / 60) % 60);
+    const seconds = Math.floor((diff / 1000) % 60);
+
+    document.getElementById("hours").textContent = String(hours).padStart(2, '0');
+    document.getElementById("minutes").textContent = String(minutes).padStart(2, '0');
+    document.getElementById("seconds").textContent = String(seconds).padStart(2, '0');
+  }
+
+  setInterval(updateTimer, 1000);
+  updateTimer();
+</script>
+
+                <ul class="bullet" style="margin-top: 60px;">
+                    <li>
+                        <div class="pic"></div>
+                        <p> Преміум якість <br></p>
+                    </li>
+                    
+                    <li>
+                        <div class="pic"></div>
+                        <p> Без запаху<br></p>
+                    </li>
+                    <li>
+                        <div class="pic"></div>
+                         <p>Довговічність<br></p>
+                    </li>
+                </ul>
+               <div class="order_form pat">
+  <a href="#orderForm" class="button-m"
+     onclick="document.getElementById('orderForm').scrollIntoView({behavior:'smooth', block:'start'}); return false;">
+    Замовити зі знижкою
+  </a>
+</div>
+
+            </section>
+
+            <!-- <section class="b2 pat">
+                <h2 class="title white">
+                    <span>ОСОБЛИВОСТІ</span>
+                    ПОКРИВАЛ
+                </h2>
+                <ul class="list-v2">
+                    <li>
+                        <div class="text" style="margin-top: 10px;">
+                            <h3>УНІВЕРСАЛЬНІСТЬ</h3>
+                            <p>За рахунок свого універсального дизайну покривало підійде під будь-який інтер'єр Вашої оселі.</p>
+                        </div>
+                        <img src="images/1.jpg" style="width: 40%;">
+                    </li>
+                    <li>
+                        <div class="text">
+                            <h3>ЯКІСТЬ</h3>
+                            <p>Покривало легко переться в машинці в делікатному режимі, не збирає пил, є гіпоалергенним та довговічним.</p>
+                        </div>
+                        <img src="images/2.jpg" style="width: 40%;">
+                    </li>
+                    <li>
+                        <div class="text" style="margin-top: 20px;">
+                            <h3>ТРЕНДОВИЙ СТИЛЬ</h3>
+                            <p>Стане яскравим акцентом в інтер'єрі вашої спальні чи вітальні.</p>
+                        </div>
+                        <img src="images/3.jpg" style="width: 40%;">
+                    </li>
+                </ul>
+                <a href="#order" class="button-m">Замовити зі знижкою</a>
+            </section> -->
+            <section class="b4 pat">
+                <!-- <h2 class="title white">
+                    <span>Опис</span> 
+                </h2> -->
+                <!-- <img src="images/14.webp" alt class="image"> -->
+                <!-- <ul class="char-list">
+                    <p style="text-align: center; color: #000000; font-weight: 700; padding: 5px; font-size: 23px;">Зустрічайте новорічне свято з найпишнішою, найреалістичнішою ялинкою сезону!
+Ялинка 2026 — це не просто декор, а справжній символ затишку, сімейного тепла і святкового настрою.</p>
+<br> -->
+<section class="advantages pat">
+  <h2 class="title">
+    <span>Переваги</span> 
+  </h2>
+
+  <ul class="advantages-list">
+    <li>
+      <h3>🎄Натуральна краса та святковий вигляд</h3>
+      <p>Гірлянда прикрашена справжніми шишками, які додають природного шарму та створюють атмосферу зимової казки у вашому домі.</p>
+    </li>
+
+    <li>
+      <h3>🟢 Якісні матеріали</h3>
+      <p>Виготовлена з щільного габардину та декоративних елементів, що не втрачають форму і колір багато сезонів поспіль.</p>
+    </li>
+
+    <li>
+      <h3>🟢Без осипання та запаху</h3>
+      <p>Матеріали безпечні, не виділяють запахів і не обсипаються навіть після тривалого використання.</p>
+    </li>
+
+    <li>
+      <h3>🟢 Гнучка та зручна у використанні</h3>
+      <p>Легко кріпиться на камін, двері, вікно чи стіл — можна надати будь-якої форми.</p>
+    </li>
+
+    <li>
+      <h3>🟢Компактне зберігання</h3>
+      <p>Після свят гірлянду зручно згорнути та зберігати в коробці — не займає багато місця.</p>
+    </li>
+
+    <li>
+      <h3>🟢 Готова до декору одразу</h3>
+      <p>Не потребує додаткового оформлення — просто розпакуйте, прикрасьте улюблене місце й насолоджуйтесь святковим затишком.</p>
+    </li>
+  </ul>
+</section>
+
+<style>
+  .advantages {
+    background: #f9fff8;
+    padding: 40px 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.05);
+    margin: 40px auto;
+    max-width: 900px;
+  }
+
+  .advantages .title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 800;
+    color: #1a5c11;
+    margin-bottom: 30px;
+  }
+
+  .advantages-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .advantages-list li {
+    margin-bottom: 22px;
+    padding: 15px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .advantages-list li:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+  }
+
+  .advantages-list h3 {
+    color: #26810d;
+    font-size: 20px;
+    margin-bottom: 6px;
+  }
+
+  .advantages-list p {
+    color: #333;
+    line-height: 1.5;
+    font-size: 16px;
+  }
+
+  @media (max-width: 600px) {
+    .advantages .title { font-size: 24px; }
+    .advantages-list h3 { font-size: 18px; }
+    .advantages-list p { font-size: 15px; }
+  }
+</style>
+
+                    <!-- <p class="har">- <b>Розмір на моделі:</b> 50-52<br>
+                       <b> - Параметри моделі:</b> 106-80-107<br>
+                        - <b>Зріст моделі:</b> 163</p> -->
+                    <!-- <li>
+                        <b>* Виробник:</b>
+                        <span>Греція</span>
+                    </li>
+                    <li>
+                        <b>* Матеріал:</b>
+                        <span>кераміка</span>
+                    </li>
+                    <li>
+                        <b>* Діаметр:</b>
+                        <span>
+                            19 см
+                        </span>
+                    </li> -->
+                    <!--  <li>-->
+                    <!--    <b>* Вид:</b>-->
+                    <!--    <span>-->
+                    <!--        Десертні-->
+                    <!--    </span>-->
+                    <!--</li>-->
+                   
+                <!-- </ul>
+                <b style="color: #000000; margin-left: 30px;">* Безпечні для посудомийної машини та </b><br>
+                <b style="color: #000000; margin-left: 40px;">мікрохвильовки</b><br><br>
+                <b style="color: #000000; margin-left: 30px;">* Стійкі до щоденного використання</b> -->
+                <!-- <h2 class="title white">
+                    <span>Розмірна сітка</span> 
+                </h2>
+                <img src="images/har1.jpg" alt="" class="image"> -->
+                <!-- <img src="images/har.jpg" alt="" class="image"> -->
+
+               
+            </section>
+            <section class="reviews pat background-white">
+              
+                
+               <section class="trees-section">
+  <h2 class="title">
+    <span>Обирайте</span> свою гірлянду 
+  </h2>
+
+  <div class="trees-grid">
+
+    <!-- Ялинка 1,0 м -->
+    <div class="item">
+      <p class="product-title">Гірлянда 2.8м без шишок</p>
+      <div class="slider">
+        <img src="images/1m.jpg" alt="Ялинка 1 метр">
+      </div>
+      <div class="text_block_card">
+        <div class="old_pr_card"><p>-40%</p><h6>1350 грн</h6></div>
+        <div class="new_pr_card"><p>Ціна сьогодні:</p><h6>799 грн</h6></div>
+      </div>
+      <a href="#orderForm" class="button-m">Замовити зі знижкою</a>
+    </div>
+
+    <!-- Ялинка 1,3 м -->
+    <div class="item">
+      <p class="product-title">Гірлянда 2.8м із шишками</p>
+      <div class="slider">
+        <img src="images/1_3m.jpg" alt="Ялинка 1.3 метра">
+      </div>
+      <div class="text_block_card">
+        <div class="old_pr_card"><p>-40%</p><h6>1350 грн</h6></div>
+        <div class="new_pr_card"><p>Ціна сьогодні:</p><h6>799 грн</h6></div>
+      </div>
+      <a href="#orderForm" class="button-m">Замовити зі знижкою</a>
+    </div>
+
+    <!-- Ялинка 1,5 м
+    <div class="item">
+      <p class="product-title">Ялинка 1,5 м</p>
+      <div class="slider">
+        <img src="images/1_5m.jpg" alt="Ялинка 1.5 метра">
+      </div>
+      <div class="text_block_card">
+        <div class="old_pr_card"><p>-40%</p><h6>1680 грн</h6></div>
+        <div class="new_pr_card"><p>Ціна сьогодні:</p><h6>999 грн</h6></div>
+      </div>
+      <a href="#orderForm" class="button-m">Замовити зі знижкою</a>
+    </div> -->
+
+    <!-- Ялинка 1,8 м -->
+    <!-- <div class="item">
+      <p class="product-title">Ялинка 1,8 м</p>
+      <div class="slider">
+        <img src="images/1_8m.jpg" alt="Ялинка 1.8 метра">
+      </div>
+      <div class="text_block_card">
+        <div class="old_pr_card"><p>-40%</p><h6>2170 грн</h6></div>
+        <div class="new_pr_card"><p>Ціна сьогодні:</p><h6>1299 грн</h6></div>
+      </div>
+      <a href="#orderForm" class="button-m">Замовити зі знижкою</a>
+    </div> -->
+
+    <!-- Ялинка 2,0 м -->
+    <!-- <div class="item">
+      <p class="product-title">Ялинка 2,0 м</p>
+      <div class="slider">
+        <img src="images/2m.jpg" alt="Ялинка 2 метри">
+      </div>
+      <div class="text_block_card">
+        <div class="old_pr_card"><p>-40%</p><h6>2500 грн</h6></div>
+        <div class="new_pr_card"><p>Ціна сьогодні:</p><h6>1499 грн</h6></div>
+      </div>
+      <a href="#orderForm" class="button-m">Замовити зі знижкою</a>
+    </div> -->
+
+    <!-- Ялинка 2,2 м -->
+    <!-- <div class="item">
+      <p class="product-title">Ялинка 2,2 м</p>
+      <div class="slider">
+        <img src="images/2_2m.jpg" alt="Ялинка 2.2 метра">
+      </div>
+      <div class="text_block_card">
+        <div class="old_pr_card"><p>-25%</p><h6>3000 грн</h6></div>
+        <div class="new_pr_card"><p>Ціна сьогодні:</p><h6>1799грн</h6></div>
+      </div>
+      <a href="#orderForm" class="button-m">Замовити зі знижкою</a>
+    </div> -->
+
+    <!-- Ялинка 2,5 м -->
+    <!-- <div class="item">
+      <p class="product-title">Ялинка 2,5 м</p>
+      <div class="slider">
+        <img src="images/2_5m.jpg" alt="Ялинка 2.5 метра">
+      </div>
+      <div class="text_block_card">
+        <div class="old_pr_card"><p>-40%</p><h6>4170 грн</h6></div>
+        <div class="new_pr_card"><p>Ціна сьогодні:</p><h6>2599 грн</h6></div>
+      </div>
+      <a href="#orderForm" class="button-m">Замовити зі знижкою</a>
+    </div> -->
+
+  </div>
+</section>
+
+<style>
+  .trees-section {
+    background: #f7fff6;
+    padding: 40px 10px;
+  }
+
+  .trees-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    justify-items: center;
+  }
+
+  .item {
+    background: #fff;
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 0 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+  }
+
+  .product-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1a5c11;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+
+  .slider img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  @media (max-width: 600px) {
+    .product-title { font-size: 18px; }
+  }
+</style>
+
+
+
+
+           
+               
+
+  
+                    
+                    <!--<span style="font-size: 30px; color: #000000;">Діаметр - 15 см</span>-->
+                    <!-- <span style="font-size: 30px; color: red;">Всі в наявності</span> -->
+               
+
+
+            <section class="reviews pat dl" style="background-color: #26810d;">
+                <br>
+                <br>
+                <h2 class="title white">
+                    <span>Відгуки покупців</span>
+                    
+                </h2>
+                <div class="total">407 позитивних відгуків</div>
+                <div class="item">
+                    <div class="slider review">
+                        <center><b>Ольга</b><br>
+                            ⭐️⭐️⭐️⭐️⭐️<br>
+                        <p>Дуже гарна гірлянда! 🌲 Шишки справжні, виглядає натурально і святково. Прикрасила камін — тепер у кімнаті справжній новорічний настрій ❤️</p></center>
+                        <center><b>Ігор</b><br>
+                            ⭐️⭐️⭐️⭐️⭐️<br>
+                            <p>Брав для декору в офіс — усі в захваті! Натуральний вигляд, гарно тримає форму, легко кріпиться. Уже замовили ще дві для дому 🎁</p></center>
+                            <center><b>Марина</b><br>
+                                ⭐️⭐️⭐️⭐️⭐️<br>
+                                <p>Не очікувала, що за таку ціну буде така якість! Гірлянда щільна, не сиплеться, шишки міцно тримаються. Додала кілька гірлянд з вогниками — вийшло просто казково ✨</p></center>
+                                <center><b>Настя</b><br>
+                                    ⭐️⭐️⭐️⭐️⭐️<br>
+                                    <p>Гірлянда чудова — виглядає дорого, а пахне святом 😊 Матеріал якісний, колір насичений, шишки справжні. Дуже швидка відправка — прийшла за два дні!</p></center>
+                        <!-- <img src="images/review/1.jpg" alt="">
+                        <img src="images/review/2.jpg" alt="">
+                        <img src="images/review/3.jpg" alt="">
+                        <img src="images/review/4.jpg" alt="">
+                        <img src="images/review/5.jpg" alt="">
+                        <img src="images/review/6.jpg" alt="">
+                        <img src="images/review/7.jpg" alt="">
+                        <img src="images/review/8.jpg" alt=""> -->
+                    </div>
+                </div>
+               
+                
+            </section>
+            <section class="order-info">
+                <h2 class="title">
+                    <span>Як замовити?</span>
+                </h2>
+                <ul class="order-list">
+                    <li>
+                        <div class="txt">
+                            <h4>Крок 1:</h4>
+                            <p>Заповніть форму замовлення</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="txt">
+                            <h4>Крок 2:</h4>
+                            <p>Дочекайтесь дзвінка оператора</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="txt">
+                            <h4>Крок 3:</h4>
+                            <p>Оплатіть товар після отримання</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <!-- <div style="    height: 100%;
+    /* background: url(https://www.ironflex.co.ua/image/cache/catalog/banners/baner-header/baner-header-640x40-mobile-shaker-ua-640x40.jpg); */
+    background-size: 100% 100%;
+    color: #3c4152;
+    text-align: center;
+    font-size: 16px;
+    padding-top: 2px;
+    font-weight: 900;">
+                <span style="font-family: 'Proxima Nova', Arial, Helvetica, sans-serif; letter-spacing: 0px;">ДРУГЕ ПОКРИВАЛО ЗА ЦІНОЮ 750 ГРН</span>
+            </div> -->
+            <!-- <section class="offer">
+                <a class="main-title" style="background-color: #26810d;">
+                    <span class="colortext">Ваше незабутнє свято з <br>нашим чарівним посудом!</span> -->
+                    <!-- <p style="font-size: 20px; color: aliceblue;">Великі розміри</p> -->
+                </a>
+                <!-- <div class="sub-title">ДОМАШНІЙ ПЛЕД 140 X 200 СМ</div> -->
+                <div class="gallery">
+                    <img src="images/main.jpg" alt="">
+                    
+                    <!-- <div class="price">
+                        <div class="old">
+                            <p>Звичайна ціна:</p>
+                            <div class="val">
+                                <span>1530</span><i>грн</i>
+                            </div>
+                        </div>
+                        <div class="new">
+                            <p>Ціна сьогодні:</p>
+                            <div class="val">
+                                <span>1149</span><i>грн</i>
+                            </div>
+                        </div>
+                    </div> -->
+                    
+                </div>
+                <div class="order_form pat">
+                    <div class="form-txt">
+                        <h4>Залишити замовлення</h4>
+                        <!-- <p>та отримайте консультацію</p><p>Вернутися до Магазину</p><a href="http://zakupay-store.com/" target="_blank" style="cursor: pointer;color: gold;">Zakupay-Store</a> -->
+                  </div>
+<form id="orderForm" class="main-order-form">
+
+  <input class="field" type="text" name="name" placeholder="Введіть Ваше імʼя" required>
+  <input class="field" type="tel" name="phone" placeholder="Введіть Ваш телефон" required>
+
+  <select name="comment" class="field" required>
+    <option selected disabled>Оберіть гірлянду</option>
+    <option value="гірлянда без шишок 799 грн">гірлянда без шишок 799 грн </option>
+    <option value="гірлянда без шишок 1499 грн 2шт">гірлянда без шишок 1499 грн 2шт(-6%) </option>
+    <option value="гірлянда із шишками 799 грн">гірлянда із шишками 799 грн</option>
+    <option value="гірлянда із шишками 1499 грн 2шт">гірлянда із шишками 1499 грн 2шт (-6%)</option>
+    <option value=" потрібна крнсультація">Потрібка консультація</option>
+  </select>
+
+  <button class="button-m" type="submit">Замовити зараз</button>
+</form>
+
+<script>
+  const BOT_TOKEN = "6897804929:AAE7BfzBRNefcjG5gpyx7KbLTmqf-13MwTY";
+  const CHAT_ID = "-4251179444";
+
+  document.getElementById("orderForm").addEventListener("submit", async function(e) {
+    e.preventDefault();
+
+    const name = this.name.value.trim();
+    const phone = this.phone.value.trim();
+    const comment = this.comment.value;
+
+    if (!name || !phone || !comment) {
+      alert("Будь ласка, заповніть усі поля.");
+      return;
+    }
+
+    const message = `🎄 <b>НОВЕ ЗАМОВЛЕННЯ</b>\n👤 Ім’я: ${name}\n📞 Телефон: ${phone}\n🎁 Ялинка: ${comment}`;
+
+    try {
+      await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          chat_id: CHAT_ID,
+          text: message,
+          parse_mode: "HTML"
+        })
+      });
+
+      // ✅ Перенаправлення на сторінку "дякуємо"
+      window.location.href = "images/thank_you_page.html";
+
+    } catch (error) {
+      alert("⚠️ Помилка відправки! Перевірте інтернет або зверніться до адміністратора.");
+      console.error(error);
+    }
+  });
+</script>
+
+
+   
+
+                        <!--   <select name="size" class="field">-->
+                        <!--    <option selected="" disabled="">Оберіть розмір</option>-->
+                        <!--    <option value="50-52">50-52</option>-->
+                        <!--    <option value="54-56">54-56</option>-->
+                        <!--    <option value="58-60">58-60</option>-->
+                        <!--</select> -->
+                        <!-- <p style="text-align: center;padding: 0px 0px 25px 0px;font-weight: 400;font-size: 18px;">
+                            <input class="custom-checkbox" type="checkbox" id="fast" name="fast" style="appearance: auto;">
+                            <label for="fast">Додати дані Нової Пошти</label>
+                            <input id="hidden_inp" class="field" type="text" name="city" placeholder="Введіть Ваш населений пункт" style="display: none;">
+                            <input id="hidden_inp_1" class="field" type="text" name="address" placeholder="Номер відділення Нової Пошти " style="display: none;">
+                            
+                            
+                        </p> -->
+                       
+            <!-- <img width="960" height="207" img src="images/002.jpeg" alt class="attachment-full size-full" loading="lazy" srcset sizes="(max-width: 960px) 100vw, 960px"> -->
+            <!-- <img width="960" height="207" img src="images/003.jpeg" alt class="attachment-full size-full" loading="lazy" srcset sizes="(max-width: 960px) 100vw, 960px"> -->
+            <footer>
+                <div style="text-align: center; margin: 10px auto; display: block; font-size: 14px; line-height: 26px;">
+                    <!-- <a href="policy.html" target="_blank" style="cursor: pointer;color: gold;">Політика конфіденційності </a> -->
+                    <p>Працюємо офіційно
+                        З 10:00 до 20:00</p>
+                </div>
+            </footer>
+            <footer>
+                <div style="text-align: center; margin: 5px auto; display: block; font-size: 5px; line-height: 5px;">
+                    <img src="images/001.jpeg.png" alt="">
+                </div>
+            </footer>
+        </div>
+        <div class="online-visitors-widget online-visitors-widget_light" style="bottom: 0%; top: auto;">
+            <div class="online-visitors-widget__item">
+                <span class="online-visitors-widget__title">Заявок сьогодні:</span>
+                <b class="_orders">15</b>
+                шт.
+            </div>
+        </div>
+        <!-- куплено сьогодні html end -->
+        <!-- стилі start -->
+        <style>
+            #popup_banner {
+                position: fixed;
+                bottom: 50px;
+                background: #ffffffbf;
+                font-family: Lato,sans-serif;
+                z-index: 1000;
+                left: -400px;
+                width: 74%;
+                transition: transform 1000ms ease-in-out;
+                max-width: 360px;
+                border-radius: 10px;
+                box-shadow: 0px 0px 27px 0px rgb(0 0 0 / 75%);
+            }
+
+            #popup_banner div.bann_in {
+                display: flex;
+                text-decoration: none;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                max-height: 125px;
+                justify-content: center;
+                align-content: center;
+            }
+
+            #popup_banner img.bann_img {
+                width: 120px;
+                height: 120px;
+                padding: 6px;
+            }
+
+            .p_b_box {
+                text-align: center;
+                margin-top: 11px;
+                text-transform: uppercase;
+                font-size: 19px;
+                letter-spacing: 0px;
+                margin-right: 10px;
+                color: black;
+            }
+
+            .p_b_box h4 {
+                color: #000000;
+                margin-left: -7px;
+                font-weight: 700;
+                margin-bottom: 8px;
+            }
+
+            .p_b_box span {
+                font-size: 14px;
+                font-weight: 700;
+            }
+
+            .bann_close {
+                z-index: 1000;
+                width: 25px;
+                height: 25px;
+                position: absolute;
+                right: -10px;
+                border-radius: 22px;
+                top: -10px;
+                cursor: pointer;
+                background: #ffffffbf;
+            }
+
+            .online-visitors-widget {
+                position: fixed;
+                top: 175px;
+                left: 10px;
+                z-index: 9999;
+            }
+
+            .online-visitors-widget .online-visitors-widget__item {
+                border-radius: 20px;
+                padding: 10px;
+                -webkit-box-shadow: 0 0 16px 0 rgb(0 0 0 / 15%);
+                box-shadow: 0 0 16px 0 rgb(0 0 0 / 15%);
+                position: relative;
+                box-shadow: 0px 0px 27px 0px rgb(0 0 0 / 75%);
+            }
+
+            .online-visitors-widget > div:first-child {
+                margin-bottom: 15px;
+            }
+
+            .online-visitors-widget.online-visitors-widget_light .online-visitors-widget__item {
+                background: #ffffffbf;
+                color: black;
+                font-weight: 700;
+                font-size: 14px;
+            }
+
+            .online-visitors-widget.online-visitors-widget_light .online-visitors-widget__item:last-child:before {
+                content: '';
+                display: block;
+                background: url(images/cart.png) no-repeat 0 0 / contain;
+                width: 30px;
+                height: 28px;
+                position: absolute;
+                left: 12px;
+                bottom: 12px;
+            }
+
+            .online-visitors-widget .online-visitors-widget__item .online-visitors-widget__title {
+                margin-bottom: 8px;
+                display: block;
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 1em;
+                letter-spacing: .2px;
+            }
+
+            .online-visitors-widget .online-visitors-widget__item b {
+                font-weight: 700;
+                font-size: 24px;
+                color: black;
+                padding-left: 44px;
+                padding-right: 7px;
+            }
+
+            .social-button {
+                -webkit-animation: pulse 1.6s infinite;
+                animation: pulse 1.6s infinite;
+            }
+
+            @-webkit-keyframes pulse {
+                0% {
+                    -webkit-box-shadow: 0 0 0 0 rgba(246,172,56, 0.6);
+                }
+
+                70% {
+                    -webkit-box-shadow: 0 0 0 20px rgba(246,172,56, 0);
+                }
+
+                100% {
+                    -webkit-box-shadow: 0 0 0 0 rgba(246,172,56, 0);
+                }
+            }
+
+            @keyframes pulse {
+                0% {
+                    -moz-box-shadow: 0 0 0 0 rgba(246,172,56, 0.8);
+                    box-shadow: 0 0 0 0 rgba(246,172,56, 0.8);
+                }
+
+                70% {
+                    -moz-box-shadow: 0 0 0 20px rgba(246,172,56, 0);
+                    box-shadow: 0 0 0 20px rgba(246,172,56, 0);
+                }
+
+                100% {
+                    -moz-box-shadow: 0 0 0 0 rgba(246,172,56, 0);
+                    box-shadow: 0 0 0 0 rgba(246,172,56, 0);
+                }
+            }
+        </style>
+        <script type="text/javascript" src="npm/slick-carousel%401.8.1/slick/slick.min.js"></script>
+        <!-- стилі end -->
+        <!-- скріпти обов*язково start -->
+        <script>
+           
+            function getCookie(name) {
+                var matches = document.cookie.match(new RegExp("(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"));
+                return matches ? decodeURIComponent(matches[1]) : undefined;
+            }
+            function setCookie(name, value, options={}) {
+
+                options = {
+                    path: '/',
+
+                    ...options
+                };
+
+                if (options.expires instanceof Date) {
+                    options.expires = options.expires.toUTCString();
+                }
+
+                let updatedCookie = encodeURIComponent(name) + "=" + encodeURIComponent(value);
+
+                for (let optionKey in options) {
+                    updatedCookie += "; " + optionKey;
+                    let optionValue = options[optionKey];
+                    if (optionValue !== true) {
+                        updatedCookie += "=" + optionValue;
+                    }
+                }
+
+                document.cookie = updatedCookie;
+            }
+            var time = getCookie('time');
+            if (time == undefined) {
+                var shooping = getCookie('shooping');
+                if (shooping == undefined) {
+                    var shooping = Math.floor((Math.random() * 50) + 15);
+                    $('._orders').html(shooping);
+                }
+                var date = new Date();
+                time = date.getHours();
+                setCookie('time', time);
+                setCookie('shooping', shooping);
+            } else {
+                time = getCookie('time');
+                var date = new Date();
+                var hour = date.getHours();
+                if (time != hour) {
+                    var shooping = Math.floor((Math.random() * 50) + 15);
+                    $('._orders').html(shooping);
+                    setCookie('time', hour);
+                    setCookie('shooping', shooping);
+                } else {
+                    shooping = getCookie('shooping');
+                    $('._orders').html(shooping);
+                }
+
+            }
+            setInterval(plus_shop, 10000);
+            function plus_shop() {
+                shooping = parseInt(getCookie('shooping'));
+                shooping += parseInt(Math.floor((Math.random() * 2) + 1));
+                $('._orders').html(shooping);
+                ;setCookie('shooping', shooping);
+            }
+
+            $(".slider").slick({
+                adaptiveHeight: true,
+                nextArrow: '<div class="next"></div>',
+                prevArrow: '<div class="prev"></div>'
+            });
+
+            $("a[href^='#']").click(function () {
+                var e = $(this).attr("href"), t = $(this).parent().find(".sml").text();
+                return $("#order select[name='color'] option[value='" + t + "']").prop("selected", !0), $("html, body").animate({scrollTop: $(e).offset().top + "px"}), !1
+            });
+
+
+            $("#hidden_inp_1").hide();
+            $("#hidden_inp").hide();
+            $(".custom-checkbox").change((function() {
+                $(this).prop("checked") ? ($("#hidden_inp").show(),
+                $("#hidden_inp_1").show()) : ($("#hidden_inp").hide(),
+                $("#hidden_inp_1").hide())
+            }));
+        </script>
+        
+  <!-- 🎅 Санта в межах .wrap + лапатий сніг тільки на сайті -->
+<style>
+  .wrap { position: relative !important; overflow: hidden; }
+
+  /* ❄️ Сніг в межах сайту */
+  .fx-snow{
+    position:absolute; inset:0; pointer-events:none; z-index:999;
+  }
+  .fx-flake{
+    position:absolute; color:#fff; opacity:.95;
+    text-shadow:0 0 10px rgba(255,255,255,.9),0 0 18px rgba(160,200,255,.6);
+    will-change:transform;
+  }
+
+  /* 🎅 Санта — всередині .wrap, з самого краю */
+  .fx-santa{
+    position:absolute;             /* <-- ТІЛЬКИ В МЕЖАХ .wrap */
+    top: 24px;                      /* висота появи від верху сайту */
+    left: -280px;                   /* старт — за межами контейнера */
+    width: 220px; height:auto;
+    z-index: 1000; opacity:0; pointer-events:none;
+    transform-origin: left center;
+    filter: drop-shadow(0 0 10px rgba(255,255,255,.85));
+  }
+  .fx-santa.run{
+    animation: santaEnter 4s ease-out forwards,
+               santaWave 1.8s ease-in-out 4s 3 alternate,
+               santaExit 4s ease-in 10s forwards;
+  }
+
+  @keyframes santaEnter{
+    0%   { left:-280px; opacity:0; transform:rotate(0)   scale(1); }
+    60%  { left:-8px;   opacity:1; transform:rotate(3deg) scale(1.05); }
+    100% { left:0;      opacity:1; transform:rotate(0)   scale(1); }
+  }
+  @keyframes santaWave{
+    0%   { transform:rotate(0)   scale(1.03); }
+    50%  { transform:rotate(-8deg) scale(1.05); }
+    100% { transform:rotate(0)   scale(1.03); }
+  }
+  @keyframes santaExit{
+    0%   { left:0;     opacity:1; }
+    100% { left:-280px; opacity:0; }
+  }
+
+  @media (max-width:600px){
+    .fx-santa{ width:170px; left:-210px; top:14px; }
+  }
+</style>
+
+<script>
+(function(){
+  const wrap = document.querySelector('.wrap');
+  if(!wrap) return;
+
+  /* ❄️ Сніг у межах .wrap */
+  const snowLayer = document.createElement('div');
+  snowLayer.className = 'fx-snow';
+  wrap.appendChild(snowLayer);
+
+  const rnd = (a,b)=>a+Math.random()*(b-a);
+  const FLAKES = 150;
+  let rect = wrap.getBoundingClientRect();
+  const flakes = [];
+
+  function spawn(f, fromTop=true){
+    f.x = rnd(-rect.width*0.2, rect.width*1.2);
+    f.y = fromTop ? -rnd(20, rect.height*0.3) : rnd(0, rect.height);
+    f.size = rnd(18,34);
+    f.fall = rnd(45,90);
+    f.wind = rnd(-24,24);
+    f.sway = rnd(8,16);
+    f.speed = rnd(0.6,1.3);
+    f.rot = rnd(0,360);
+    f.rotSpd = rnd(-30,30);
+    f.el.style.fontSize = f.size+'px';
+  }
+
+  for(let i=0;i<FLAKES;i++){
+    const el=document.createElement('div');
+    el.className='fx-flake';
+    el.textContent='❄';
+    snowLayer.appendChild(el);
+    const f={el,x:0,y:0,size:0,fall:0,wind:0,sway:0,speed:0,rot:0,rotSpd:0,t:Math.random()*100};
+    spawn(f,true);
+    f.y = rnd(-rect.height, rect.height); // розкид по висоті
+    flakes.push(f);
+  }
+
+  let last=performance.now();
+  function tick(now){
+    const dt=Math.min(0.05,(now-last)/1000);
+    last=now;
+    for(const f of flakes){
+      f.t+=dt;
+      f.y+=f.fall*dt;
+      f.x+=(f.wind+Math.sin(f.t*f.speed)*f.sway)*dt;
+      f.rot+=f.rotSpd*dt;
+      f.el.style.transform=`translate3d(${f.x}px,${f.y}px,0) rotate(${f.rot}deg)`;
+      if(f.y>rect.height+50) spawn(f,true);
+    }
+    requestAnimationFrame(tick);
+  }
+  requestAnimationFrame(tick);
+
+  /* 🎅 Санта всередині сайту */
+  const santa = document.createElement('img');
+  santa.src = 'images/santa_real.png';   // твій файл
+  santa.className = 'fx-santa';
+  wrap.appendChild(santa);               // <-- додаємо у .wrap
+
+  function runSanta(){
+    santa.classList.remove('run');       // перезапуск анімації
+    void santa.offsetWidth;
+    santa.classList.add('run');
+  }
+  runSanta();
+  setInterval(runSanta, 20000);          // повтор кожні ~20 с
+
+  // Якщо ширина/висота сайту змінюється (наприклад, після підвантажень),
+  // оновимо розміри снігу.
+  new ResizeObserver(() => {
+    rect = wrap.getBoundingClientRect();
+  }).observe(wrap);
+})();
+</script>
+
+       <!-- 🌲 Новорічна рамка -->
+<style>
+  .fx-frame {
+    position: absolute;
+    inset: 0;
+    background: url('images/frame.png') no-repeat center;
+    background-size: 100% 100%;
+    z-index: 998;
+    pointer-events: none; /* щоб не блокувала кліки */
+  }
+</style>
+
+<script>
+  const wrap = document.querySelector('.wrap');
+  if (wrap) {
+    const frame = document.createElement('div');
+    frame.className = 'fx-frame';
+    wrap.appendChild(frame);
+  }
+</script>
+<!-- 🎄 Верхня гірлянда -->
+<style>
+  .fx-top-garland {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    z-index: 1000;
+    pointer-events: none; /* щоб не заважала клікам */
+  }
+
+  /* Якщо сайт має обгортку */
+  .wrap {
+    position: relative !important;
+    overflow: hidden;
+  }
+
+  /* Додаємо трохи відступу зверху, щоб не перекривала контент */
+  body {
+    padding-top: 130px; /* регулюй під висоту гірлянди */
+  }
+
+  @media (max-width: 600px) {
+    body {
+      padding-top: 90px;
+    }
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const garland = document.createElement('img');
+    garland.src = 'images/top_garland.png'; // 🔹 шлях до твого файлу
+    garland.alt = 'Новорічна гірлянда';
+    garland.classList.add('fx-top-garland');
+
+    // шукаємо контейнер wrap або body
+    const wrap = document.querySelector('.wrap');
+    if (wrap) wrap.prepend(garland);
+    else document.body.prepend(garland);
+  });
+</script>
+<!-- 🎄 Нижній декор із кулями -->
+<style>
+  .fx-bottom-balls {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    z-index: 800;
+    pointer-events: none; /* щоб не блокувала нічого */
+  }
+
+  .wrap {
+    position: relative !important;
+    overflow: hidden;
+    padding-bottom: 140px; /* відступ, щоб кульки не накладались на контент */
+  }
+
+  @media (max-width: 600px) {
+    .wrap {
+      padding-bottom: 100px;
+    }
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const balls = document.createElement('img');
+    balls.src = 'images/bottom_balls.png'; // 🔹 твій файл
+    balls.alt = 'Новорічні кульки';
+    balls.classList.add('fx-bottom-balls');
+
+    const wrap = document.querySelector('.wrap');
+    if (wrap) wrap.appendChild(balls);
+    else document.body.appendChild(balls);
+  });
+</script>
+
+    </body>
+</html>

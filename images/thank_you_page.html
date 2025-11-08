@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🎄 Дякуємо за замовлення! 🎅</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: "Comic Sans MS", Arial, sans-serif;
+      background: linear-gradient(180deg, #0b3d02, #034b1c, #001a09);
+      color: #fff;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .thank-you-message {
+      background: rgba(255,255,255,0.1);
+      backdrop-filter: blur(10px);
+      border: 2px solid rgba(255,255,255,0.2);
+      border-radius: 15px;
+      padding: 40px 25px;
+      text-align: center;
+      max-width: 600px;
+      box-shadow: 0 0 25px rgba(255,255,255,0.3);
+      animation: fadeIn 1.5s ease;
+      z-index: 2;
+    }
+
+    h2 {
+      color: #fff;
+      font-size: 28px;
+      margin-bottom: 10px;
+      text-shadow: 0 0 15px rgba(255,255,255,0.5);
+    }
+
+    p {
+      font-size: 18px;
+      color: #f4f4f4;
+    }
+
+    .return-button {
+      background: #e63946;
+      border: none;
+      padding: 15px 30px;
+      margin-top: 25px;
+      border-radius: 50px;
+      font-size: 18px;
+      color: #fff;
+      cursor: pointer;
+      transition: 0.3s;
+      box-shadow: 0 0 10px rgba(255,255,255,0.3);
+    }
+
+    .return-button:hover {
+      background: #ff4757;
+      box-shadow: 0 0 20px #ff4757;
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(30px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    /* ❄️ Сніг */
+    .snow {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      overflow: hidden;
+      z-index: 1;
+    }
+
+    .flake {
+      position: absolute;
+      top: -10px;
+      color: #fff;
+      opacity: 0.9;
+      font-size: 20px;
+      animation: fall linear infinite;
+    }
+
+    @keyframes fall {
+      0% { transform: translateY(0) rotate(0deg); }
+      100% { transform: translateY(100vh) rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <div class="thank-you-message">
+    <h2>🎄 Дякуємо за ваше замовлення! 🎁</h2>
+    <p>Ми отримали ваше замовлення і вже готуємо для вас святкову ялинку!</p>
+    <p>Наш менеджер скоро зв’яжеться з вами 📞</p>
+    <p>✨ З прийдешніми святами! ✨<br>Слава Україні 💙💛</p>
+
+    <button class="return-button" onclick="window.location.href='index.html'">⬅️ Повернутися на сайт</button>
+  </div>
+
+  <!-- ❄️ Сніг -->
+  <div class="snow"></div>
+
+  <script>
+    const snowContainer = document.querySelector('.snow');
+    for (let i = 0; i < 70; i++) {
+      const flake = document.createElement('div');
+      flake.classList.add('flake');
+      flake.textContent = '❄';
+      flake.style.left = Math.random() * 100 + 'vw';
+      flake.style.fontSize = Math.random() * 20 + 10 + 'px';
+      flake.style.animationDuration = Math.random() * 5 + 5 + 's';
+      flake.style.opacity = Math.random();
+      snowContainer.appendChild(flake);
+    }
+  </script>
+
+  <!-- Facebook Pixel (Lead) -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1669011633702379');
+    fbq('track', 'Lead');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1669011633702379&ev=PageView&noscript=1"
+  /></noscript>
+</body>
+</html>
